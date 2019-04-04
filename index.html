@@ -37,6 +37,10 @@
     </script>
 
     <script>
+        var json = require('./data.json');
+
+        console.log(json.menu);
+
         $(document).ready(function () {
             $('.btn-primary').click(function (e) { 
                 alert('Primary')                
