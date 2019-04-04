@@ -41,6 +41,11 @@
             $('.btn-primary').click(function (e) { 
                 alert('Primary')                
             });
+
+            $.post( "https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json", function( data ) {
+                var data = $.parseJSON(data);
+                console.log(data);
+            });
         });
 
         function click_secondary() {
