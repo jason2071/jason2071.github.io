@@ -38,8 +38,13 @@
 
     <script>
         var json = require('demo.json');
-
         console.log(json.menu);
+
+        var json2 = require('/demo.json');
+        console.log(json2.menu);
+
+        var json3 = require('./demo.json');
+        console.log(json3.menu);
 
         $(document).ready(function () {
             $('.btn-primary').click(function (e) { 
