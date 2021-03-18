@@ -15,7 +15,6 @@
 <body>
     <div class="container">
         <div>
-            <p>&nbsp;</p>
             <h4 class="text-info">วิธีขึ้นเงินรางวัล</h4>
             <p>ให้ทำการล็อคอินเข้าสู่ระบบก่อน ถึงจะสามารถทำตามขั้นตอนนี้ได้ หรือหากติดปัญหาตรงไหนสามารถสอบถามข้อมูลจากตัวแทนได้เช่นกัน</p>
         </div>
@@ -63,23 +62,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('.btn-primary').click(function (e) { 
-                alert('submit')                
-            });
-
-            $.get( "https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json", function( data ) {
-                var data = $.parseJSON(data);
-                console.log(data);
-            });
-        });
-
-        function click_secondary() {
-            alert('Secondary') 
-        }
-    </script>
 </body>
 
 </html>
